@@ -10,14 +10,21 @@ import UIKit
 import GoogleMaps
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
+    let locationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let mapKey = valueForAPIKey(keyname: "GoogleMapAPI")
         GMSServices.provideAPIKey(mapKey)
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
         
         return true
     }
@@ -49,6 +56,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let plist = NSDictionary(contentsOfFile: path!)
         let key = plist?[keyname] as! String
         return key
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let networking = Networking()
+        let location = manager.location?.coordinate
+        if let currentLocation = location {
+            Location.sharedInstance = Location(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+            print(Location.sharedInstance.latitude)
+            print(Location.sharedInstance.longitude)
+//            NotificationCenter.default.post(name: NSNotification.Name("currentLocation"), object: self, userInfo: ["currentLocation" : userLocation])
+            networking.getCarWash(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+        }
+        locationManager.stopUpdatingLocation()
     }
 
 }

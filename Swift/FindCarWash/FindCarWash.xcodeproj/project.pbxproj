@@ -17,6 +17,7 @@
 		B5B54B6D1F2CE3BE00D65803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B54B6B1F2CE3BE00D65803 /* LaunchScreen.storyboard */; };
 		B5B54B781F2CE3BE00D65803 /* FindCarWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B771F2CE3BE00D65803 /* FindCarWashTests.swift */; };
 		B5B54B831F2CE3BE00D65803 /* FindCarWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B821F2CE3BE00D65803 /* FindCarWashUITests.swift */; };
+		B5C8135A1F2DDDDF00EB0D7B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C813591F2DDDDF00EB0D7B /* Location.swift */; };
 		B5E15E1A1F2CEF01001EBC2C /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5E15E191F2CEF01001EBC2C /* ApiKeys.plist */; };
 		B5E15E1C1F2CF576001EBC2C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E15E1B1F2CF576001EBC2C /* Networking.swift */; };
 		DFB8397AFD5E421BA6AA0A04 /* Pods_FindCarWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438B8EDBCBA2DB442E81E72D /* Pods_FindCarWashUITests.framework */; };
@@ -59,6 +60,7 @@
 		B5B54B7E1F2CE3BE00D65803 /* FindCarWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCarWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B54B821F2CE3BE00D65803 /* FindCarWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCarWashUITests.swift; sourceTree = "<group>"; };
 		B5B54B841F2CE3BE00D65803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C813591F2DDDDF00EB0D7B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B5E15E191F2CEF01001EBC2C /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		B5E15E1B1F2CF576001EBC2C /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C430E917F822CA03FEBC3D3E /* Pods_FindCarWashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCarWashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 				B5B54B621F2CE3BD00D65803 /* AppDelegate.swift */,
 				B5E15E1B1F2CF576001EBC2C /* Networking.swift */,
 				B51F7A1D1F2DB5DF007B9821 /* CarWash.swift */,
+				B5C813591F2DDDDF00EB0D7B /* Location.swift */,
 				B5B54B641F2CE3BD00D65803 /* MapViewController.swift */,
 				B5B54B661F2CE3BD00D65803 /* Main.storyboard */,
 				B5B54B691F2CE3BD00D65803 /* Assets.xcassets */,
@@ -458,6 +461,7 @@
 			files = (
 				B5E15E1C1F2CF576001EBC2C /* Networking.swift in Sources */,
 				B5B54B651F2CE3BD00D65803 /* MapViewController.swift in Sources */,
+				B5C8135A1F2DDDDF00EB0D7B /* Location.swift in Sources */,
 				B51F7A1E1F2DB5DF007B9821 /* CarWash.swift in Sources */,
 				B5B54B631F2CE3BD00D65803 /* AppDelegate.swift in Sources */,
 			);
