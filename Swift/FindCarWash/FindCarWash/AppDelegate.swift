@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         let mapKey = valueForAPIKey(keyname: "GoogleMapAPI")
         GMSServices.provideAPIKey(mapKey)
         
+        locationManager.requestWhenInUseAuthorization()
+        
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -58,18 +60,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         return key
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let networking = Networking()
-        let location = manager.location?.coordinate
-        if let currentLocation = location {
-            Location.sharedInstance = Location(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
-            print(Location.sharedInstance.latitude)
-            print(Location.sharedInstance.longitude)
-//            NotificationCenter.default.post(name: NSNotification.Name("currentLocation"), object: self, userInfo: ["currentLocation" : userLocation])
-            networking.getCarWash(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
-        }
-        locationManager.stopUpdatingLocation()
-    }
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        let networking = Networking()
+//        let location = manager.location?.coordinate
+//        if let currentLocation = location {
+//            Location.sharedInstance = Location(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+//            print(Location.sharedInstance.latitude)
+//            print(Location.sharedInstance.longitude)
+////            NotificationCenter.default.post(name: NSNotification.Name("currentLocation"), object: self, userInfo: ["currentLocation" : userLocation])
+//            networking.getCarWash(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+//        }
+//        locationManager.stopUpdatingLocation()
+//    }
 
 }
 
