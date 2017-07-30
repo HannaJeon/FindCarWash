@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9126C68CEAC58B7ED83454CD /* Pods_FindCarWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F4BA02D64E5FB16898DCE3 /* Pods_FindCarWash.framework */; };
+		A3470780E02AF546BD6D74B8 /* Pods_FindCarWashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C430E917F822CA03FEBC3D3E /* Pods_FindCarWashTests.framework */; };
+		B51F7A1E1F2DB5DF007B9821 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F7A1D1F2DB5DF007B9821 /* Location.swift */; };
+		B5B54B631F2CE3BD00D65803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B621F2CE3BD00D65803 /* AppDelegate.swift */; };
+		B5B54B651F2CE3BD00D65803 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B641F2CE3BD00D65803 /* MapViewController.swift */; };
+		B5B54B681F2CE3BD00D65803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B54B661F2CE3BD00D65803 /* Main.storyboard */; };
+		B5B54B6A1F2CE3BD00D65803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B54B691F2CE3BD00D65803 /* Assets.xcassets */; };
+		B5B54B6D1F2CE3BE00D65803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B54B6B1F2CE3BE00D65803 /* LaunchScreen.storyboard */; };
+		B5B54B781F2CE3BE00D65803 /* FindCarWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B771F2CE3BE00D65803 /* FindCarWashTests.swift */; };
+		B5B54B831F2CE3BE00D65803 /* FindCarWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B821F2CE3BE00D65803 /* FindCarWashUITests.swift */; };
+		B5E15E1A1F2CEF01001EBC2C /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5E15E191F2CEF01001EBC2C /* ApiKeys.plist */; };
+		B5E15E1C1F2CF576001EBC2C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E15E1B1F2CF576001EBC2C /* Networking.swift */; };
+		DFB8397AFD5E421BA6AA0A04 /* Pods_FindCarWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438B8EDBCBA2DB442E81E72D /* Pods_FindCarWashUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5B54B741F2CE3BE00D65803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B54B571F2CE3BD00D65803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5B54B5E1F2CE3BD00D65803;
+			remoteInfo = FindCarWash;
+		};
+		B5B54B7F1F2CE3BE00D65803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B54B571F2CE3BD00D65803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5B54B5E1F2CE3BD00D65803;
+			remoteInfo = FindCarWash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F4BA02D64E5FB16898DCE3 /* Pods_FindCarWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCarWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D173EECAABADE8E4BFE5A3 /* Pods-FindCarWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCarWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindCarWashTests/Pods-FindCarWashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		438B8EDBCBA2DB442E81E72D /* Pods_FindCarWashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCarWashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C927E1BA984DA6B4873B23E /* Pods-FindCarWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCarWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindCarWash/Pods-FindCarWash.release.xcconfig"; sourceTree = "<group>"; };
+		81FB15D9CE78487D8FCA5D4A /* Pods-FindCarWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCarWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindCarWashTests/Pods-FindCarWashTests.release.xcconfig"; sourceTree = "<group>"; };
+		B51F7A1D1F2DB5DF007B9821 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B5B54B5F1F2CE3BD00D65803 /* FindCarWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCarWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B54B621F2CE3BD00D65803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5B54B641F2CE3BD00D65803 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B5B54B671F2CE3BD00D65803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5B54B691F2CE3BD00D65803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5B54B6C1F2CE3BE00D65803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5B54B6E1F2CE3BE00D65803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B54B731F2CE3BE00D65803 /* FindCarWashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCarWashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B54B771F2CE3BE00D65803 /* FindCarWashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCarWashTests.swift; sourceTree = "<group>"; };
+		B5B54B791F2CE3BE00D65803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B54B7E1F2CE3BE00D65803 /* FindCarWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCarWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B54B821F2CE3BE00D65803 /* FindCarWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCarWashUITests.swift; sourceTree = "<group>"; };
+		B5B54B841F2CE3BE00D65803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E15E191F2CEF01001EBC2C /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		B5E15E1B1F2CF576001EBC2C /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		C430E917F822CA03FEBC3D3E /* Pods_FindCarWashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCarWashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D355B0EBE8AF44869C993FB3 /* Pods-FindCarWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCarWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindCarWash/Pods-FindCarWash.debug.xcconfig"; sourceTree = "<group>"; };
+		D457A4131E6955BD3A5875F2 /* Pods-FindCarWashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCarWashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindCarWashUITests/Pods-FindCarWashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5CA574CE6B4100CCCB6C05C /* Pods-FindCarWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCarWashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindCarWashUITests/Pods-FindCarWashUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5B54B5C1F2CE3BD00D65803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9126C68CEAC58B7ED83454CD /* Pods_FindCarWash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B54B701F2CE3BE00D65803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3470780E02AF546BD6D74B8 /* Pods_FindCarWashTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B54B7B1F2CE3BE00D65803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB8397AFD5E421BA6AA0A04 /* Pods_FindCarWashUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		549C9B21EDB659AE310A91A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D355B0EBE8AF44869C993FB3 /* Pods-FindCarWash.debug.xcconfig */,
+				7C927E1BA984DA6B4873B23E /* Pods-FindCarWash.release.xcconfig */,
+				10D173EECAABADE8E4BFE5A3 /* Pods-FindCarWashTests.debug.xcconfig */,
+				81FB15D9CE78487D8FCA5D4A /* Pods-FindCarWashTests.release.xcconfig */,
+				D457A4131E6955BD3A5875F2 /* Pods-FindCarWashUITests.debug.xcconfig */,
+				D5CA574CE6B4100CCCB6C05C /* Pods-FindCarWashUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B25DE1D9083E36C56D84ACF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00F4BA02D64E5FB16898DCE3 /* Pods_FindCarWash.framework */,
+				C430E917F822CA03FEBC3D3E /* Pods_FindCarWashTests.framework */,
+				438B8EDBCBA2DB442E81E72D /* Pods_FindCarWashUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5B54B561F2CE3BD00D65803 = {
+			isa = PBXGroup;
+			children = (
+				B5B54B611F2CE3BD00D65803 /* FindCarWash */,
+				B5B54B761F2CE3BE00D65803 /* FindCarWashTests */,
+				B5B54B811F2CE3BE00D65803 /* FindCarWashUITests */,
+				B5B54B601F2CE3BD00D65803 /* Products */,
+				549C9B21EDB659AE310A91A9 /* Pods */,
+				B25DE1D9083E36C56D84ACF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5B54B601F2CE3BD00D65803 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5B54B5F1F2CE3BD00D65803 /* FindCarWash.app */,
+				B5B54B731F2CE3BE00D65803 /* FindCarWashTests.xctest */,
+				B5B54B7E1F2CE3BE00D65803 /* FindCarWashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5B54B611F2CE3BD00D65803 /* FindCarWash */ = {
+			isa = PBXGroup;
+			children = (
+				B5B54B621F2CE3BD00D65803 /* AppDelegate.swift */,
+				B5E15E1B1F2CF576001EBC2C /* Networking.swift */,
+				B51F7A1D1F2DB5DF007B9821 /* Location.swift */,
+				B5B54B641F2CE3BD00D65803 /* MapViewController.swift */,
+				B5B54B661F2CE3BD00D65803 /* Main.storyboard */,
+				B5B54B691F2CE3BD00D65803 /* Assets.xcassets */,
+				B5B54B6B1F2CE3BE00D65803 /* LaunchScreen.storyboard */,
+				B5B54B6E1F2CE3BE00D65803 /* Info.plist */,
+				B5E15E191F2CEF01001EBC2C /* ApiKeys.plist */,
+			);
+			path = FindCarWash;
+			sourceTree = "<group>";
+		};
+		B5B54B761F2CE3BE00D65803 /* FindCarWashTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5B54B771F2CE3BE00D65803 /* FindCarWashTests.swift */,
+				B5B54B791F2CE3BE00D65803 /* Info.plist */,
+			);
+			path = FindCarWashTests;
+			sourceTree = "<group>";
+		};
+		B5B54B811F2CE3BE00D65803 /* FindCarWashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5B54B821F2CE3BE00D65803 /* FindCarWashUITests.swift */,
+				B5B54B841F2CE3BE00D65803 /* Info.plist */,
+			);
+			path = FindCarWashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5B54B5E1F2CE3BD00D65803 /* FindCarWash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B54B871F2CE3BE00D65803 /* Build configuration list for PBXNativeTarget "FindCarWash" */;
+			buildPhases = (
+				2873EE8F18C7378B7CC9DC60 /* [CP] Check Pods Manifest.lock */,
+				B5B54B5B1F2CE3BD00D65803 /* Sources */,
+				B5B54B5C1F2CE3BD00D65803 /* Frameworks */,
+				B5B54B5D1F2CE3BD00D65803 /* Resources */,
+				571AA38D8489A93146BCC185 /* [CP] Embed Pods Frameworks */,
+				2FF64992C4B621370CED631B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindCarWash;
+			productName = FindCarWash;
+			productReference = B5B54B5F1F2CE3BD00D65803 /* FindCarWash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5B54B721F2CE3BE00D65803 /* FindCarWashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B54B8A1F2CE3BE00D65803 /* Build configuration list for PBXNativeTarget "FindCarWashTests" */;
+			buildPhases = (
+				45705B15375BBBDE5B1EDF71 /* [CP] Check Pods Manifest.lock */,
+				B5B54B6F1F2CE3BE00D65803 /* Sources */,
+				B5B54B701F2CE3BE00D65803 /* Frameworks */,
+				B5B54B711F2CE3BE00D65803 /* Resources */,
+				311710889EDB993D69046564 /* [CP] Embed Pods Frameworks */,
+				8D432ED9D551ECDF99AAE791 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B54B751F2CE3BE00D65803 /* PBXTargetDependency */,
+			);
+			name = FindCarWashTests;
+			productName = FindCarWashTests;
+			productReference = B5B54B731F2CE3BE00D65803 /* FindCarWashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5B54B7D1F2CE3BE00D65803 /* FindCarWashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B54B8D1F2CE3BE00D65803 /* Build configuration list for PBXNativeTarget "FindCarWashUITests" */;
+			buildPhases = (
+				F69A476988FAEEF5CE125506 /* [CP] Check Pods Manifest.lock */,
+				B5B54B7A1F2CE3BE00D65803 /* Sources */,
+				B5B54B7B1F2CE3BE00D65803 /* Frameworks */,
+				B5B54B7C1F2CE3BE00D65803 /* Resources */,
+				159983E04D41999F624E928D /* [CP] Embed Pods Frameworks */,
+				7F51D228065ACDABE560DDF4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B54B801F2CE3BE00D65803 /* PBXTargetDependency */,
+			);
+			name = FindCarWashUITests;
+			productName = FindCarWashUITests;
+			productReference = B5B54B7E1F2CE3BE00D65803 /* FindCarWashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5B54B571F2CE3BD00D65803 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = HannaJeon;
+				TargetAttributes = {
+					B5B54B5E1F2CE3BD00D65803 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					B5B54B721F2CE3BE00D65803 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B5B54B5E1F2CE3BD00D65803;
+					};
+					B5B54B7D1F2CE3BE00D65803 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B5B54B5E1F2CE3BD00D65803;
+					};
+				};
+			};
+			buildConfigurationList = B5B54B5A1F2CE3BD00D65803 /* Build configuration list for PBXProject "FindCarWash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5B54B561F2CE3BD00D65803;
+			productRefGroup = B5B54B601F2CE3BD00D65803 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5B54B5E1F2CE3BD00D65803 /* FindCarWash */,
+				B5B54B721F2CE3BE00D65803 /* FindCarWashTests */,
+				B5B54B7D1F2CE3BE00D65803 /* FindCarWashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5B54B5D1F2CE3BD00D65803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B54B6D1F2CE3BE00D65803 /* LaunchScreen.storyboard in Resources */,
+				B5E15E1A1F2CEF01001EBC2C /* ApiKeys.plist in Resources */,
+				B5B54B6A1F2CE3BD00D65803 /* Assets.xcassets in Resources */,
+				B5B54B681F2CE3BD00D65803 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B54B711F2CE3BE00D65803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B54B7C1F2CE3BE00D65803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		159983E04D41999F624E928D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindCarWashUITests/Pods-FindCarWashUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2873EE8F18C7378B7CC9DC60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2FF64992C4B621370CED631B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindCarWash/Pods-FindCarWash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		311710889EDB993D69046564 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindCarWashTests/Pods-FindCarWashTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45705B15375BBBDE5B1EDF71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		571AA38D8489A93146BCC185 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindCarWash/Pods-FindCarWash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F51D228065ACDABE560DDF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindCarWashUITests/Pods-FindCarWashUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D432ED9D551ECDF99AAE791 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindCarWashTests/Pods-FindCarWashTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F69A476988FAEEF5CE125506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5B54B5B1F2CE3BD00D65803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E15E1C1F2CF576001EBC2C /* Networking.swift in Sources */,
+				B5B54B651F2CE3BD00D65803 /* MapViewController.swift in Sources */,
+				B51F7A1E1F2DB5DF007B9821 /* Location.swift in Sources */,
+				B5B54B631F2CE3BD00D65803 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B54B6F1F2CE3BE00D65803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B54B781F2CE3BE00D65803 /* FindCarWashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B54B7A1F2CE3BE00D65803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B54B831F2CE3BE00D65803 /* FindCarWashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5B54B751F2CE3BE00D65803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5B54B5E1F2CE3BD00D65803 /* FindCarWash */;
+			targetProxy = B5B54B741F2CE3BE00D65803 /* PBXContainerItemProxy */;
+		};
+		B5B54B801F2CE3BE00D65803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5B54B5E1F2CE3BD00D65803 /* FindCarWash */;
+			targetProxy = B5B54B7F1F2CE3BE00D65803 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5B54B661F2CE3BD00D65803 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B54B671F2CE3BD00D65803 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5B54B6B1F2CE3BE00D65803 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B54B6C1F2CE3BE00D65803 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5B54B851F2CE3BE00D65803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5B54B861F2CE3BE00D65803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5B54B881F2CE3BE00D65803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D355B0EBE8AF44869C993FB3 /* Pods-FindCarWash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FindCarWash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B5B54B891F2CE3BE00D65803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C927E1BA984DA6B4873B23E /* Pods-FindCarWash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FindCarWash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B5B54B8B1F2CE3BE00D65803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D173EECAABADE8E4BFE5A3 /* Pods-FindCarWashTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindCarWashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCarWash.app/FindCarWash";
+			};
+			name = Debug;
+		};
+		B5B54B8C1F2CE3BE00D65803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FB15D9CE78487D8FCA5D4A /* Pods-FindCarWashTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindCarWashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCarWash.app/FindCarWash";
+			};
+			name = Release;
+		};
+		B5B54B8E1F2CE3BE00D65803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D457A4131E6955BD3A5875F2 /* Pods-FindCarWashUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FindCarWashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindCarWash;
+			};
+			name = Debug;
+		};
+		B5B54B8F1F2CE3BE00D65803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5CA574CE6B4100CCCB6C05C /* Pods-FindCarWashUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FindCarWashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindCarWash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5B54B5A1F2CE3BD00D65803 /* Build configuration list for PBXProject "FindCarWash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B54B851F2CE3BE00D65803 /* Debug */,
+				B5B54B861F2CE3BE00D65803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B54B871F2CE3BE00D65803 /* Build configuration list for PBXNativeTarget "FindCarWash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B54B881F2CE3BE00D65803 /* Debug */,
+				B5B54B891F2CE3BE00D65803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B54B8A1F2CE3BE00D65803 /* Build configuration list for PBXNativeTarget "FindCarWashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B54B8B1F2CE3BE00D65803 /* Debug */,
+				B5B54B8C1F2CE3BE00D65803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B54B8D1F2CE3BE00D65803 /* Build configuration list for PBXNativeTarget "FindCarWashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B54B8E1F2CE3BE00D65803 /* Debug */,
+				B5B54B8F1F2CE3BE00D65803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5B54B571F2CE3BD00D65803 /* Project object */;
+}
