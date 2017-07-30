@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class Networking {
     
@@ -17,7 +18,19 @@ class Networking {
         return url
     }()
     
-    func getCarWash() {
+    func getCarWash(latitude: Double, longitude: Double) {
+        let parameters = ["latitude": latitude, "longitude": longitude]
         
+        Alamofire.request("\(url)/carwash", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response) in
+            var carWash = [CarWash]()
+            
+            if let contents = response.result.value as? [[String:Any]] {
+                for content in contents {
+                    let carWashInfo = CarWash(carWash: content)
+                    carWash.append(carWashInfo)
+                }
+            }
+            NotificationCenter.default.post(name: NSNotification.Name("finishedGetCarWash"), object: self, userInfo: ["CarWash" : carWash])
+        }
     }
 }

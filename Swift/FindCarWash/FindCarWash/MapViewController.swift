@@ -12,6 +12,8 @@ import GoogleMaps
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
+    let networking = Networking()
+    var carWashInfo = [CarWash]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(getCarWashInfo(_:)), name: NSNotification.Name("finishedGetCarWash"), object: networking)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,12 +47,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let coordinate = manager.location?.coordinate
+        let location = manager.location?.coordinate
         
-        if let loaction = coordinate {
-            
+        if let currentLocation = location {
+            networking.getCarWash(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+            print(currentLocation.latitude)
+            print(currentLocation.longitude)
+            print(type(of: currentLocation.latitude))
         }
         locationManager.stopUpdatingLocation()
     }
+    
+    func getCarWashInfo(_ notification: Notification) {
+        if let userInfo = notification.userInfo as? [String:[CarWash]] {
+            if let carWash = userInfo["CarWash"] {
+                carWashInfo = carWash
+                print(carWashInfo)
+            }
+        }
+    }
+    
 }
 
