@@ -13,7 +13,6 @@
 		B5B54B631F2CE3BD00D65803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B621F2CE3BD00D65803 /* AppDelegate.swift */; };
 		B5B54B651F2CE3BD00D65803 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B641F2CE3BD00D65803 /* MapViewController.swift */; };
 		B5B54B681F2CE3BD00D65803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B54B661F2CE3BD00D65803 /* Main.storyboard */; };
-		B5B54B6A1F2CE3BD00D65803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B54B691F2CE3BD00D65803 /* Assets.xcassets */; };
 		B5B54B6D1F2CE3BE00D65803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B54B6B1F2CE3BE00D65803 /* LaunchScreen.storyboard */; };
 		B5B54B781F2CE3BE00D65803 /* FindCarWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B771F2CE3BE00D65803 /* FindCarWashTests.swift */; };
 		B5B54B831F2CE3BE00D65803 /* FindCarWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54B821F2CE3BE00D65803 /* FindCarWashUITests.swift */; };
@@ -51,7 +50,6 @@
 		B5B54B621F2CE3BD00D65803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B54B641F2CE3BD00D65803 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5B54B671F2CE3BD00D65803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5B54B691F2CE3BD00D65803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B54B6C1F2CE3BE00D65803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5B54B6E1F2CE3BE00D65803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B54B731F2CE3BE00D65803 /* FindCarWashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCarWashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +149,6 @@
 				B5C813591F2DDDDF00EB0D7B /* Location.swift */,
 				B5B54B641F2CE3BD00D65803 /* MapViewController.swift */,
 				B5B54B661F2CE3BD00D65803 /* Main.storyboard */,
-				B5B54B691F2CE3BD00D65803 /* Assets.xcassets */,
 				B5B54B6B1F2CE3BE00D65803 /* LaunchScreen.storyboard */,
 				B5B54B6E1F2CE3BE00D65803 /* Info.plist */,
 				B5E15E191F2CEF01001EBC2C /* ApiKeys.plist */,
@@ -295,7 +292,6 @@
 			files = (
 				B5B54B6D1F2CE3BE00D65803 /* LaunchScreen.storyboard in Resources */,
 				B5E15E1A1F2CEF01001EBC2C /* ApiKeys.plist in Resources */,
-				B5B54B6A1F2CE3BD00D65803 /* Assets.xcassets in Resources */,
 				B5B54B681F2CE3BD00D65803 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
