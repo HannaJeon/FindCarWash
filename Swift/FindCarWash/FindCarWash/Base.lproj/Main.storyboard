@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rzs-zq-Rcl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v1h-OM-X7H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,88 +23,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHy-Dc-ey1" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vY-Jm-f3c" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-P7-4an">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ru-Is-Tuw">
-                                        <rect key="frame" x="97" y="49" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="gj2-ay-6Bf" kind="showDetail" id="DYP-D1-1qh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-hJ-fAs">
+                                <rect key="frame" x="16" y="75" width="44" height="44"/>
+                                <state key="normal" image="location"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ujW-hJ-fAs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TOw-Ct-xkf"/>
+                            <constraint firstItem="ujW-hJ-fAs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="75" id="fIN-Rl-8Nx"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8ZH-Wq-ODB">
+                    <navigationItem key="navigationItem" id="qc8-WS-aHm">
                         <rightBarButtonItems>
-                            <barButtonItem image="filtericon" id="dSK-sf-BIq">
-                                <inset key="imageInsets" minX="-30" minY="0.0" maxX="5" maxY="5"/>
-                            </barButtonItem>
-                            <barButtonItem image="listicon" id="H5T-KW-yVu">
-                                <inset key="imageInsets" minX="5" minY="0.0" maxX="0.0" maxY="5"/>
+                            <barButtonItem image="filtericon" id="gBt-3L-1Gn"/>
+                            <barButtonItem image="mapicon" id="c5w-aQ-bdP">
+                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-30" maxY="0.0"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="mapView" destination="MHy-Dc-ey1" id="Eva-RD-bCy"/>
+                        <outlet property="mapView" destination="0vY-Jm-f3c" id="sGz-gk-9YT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015.2" y="138.98050974512745"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="asO-19-kH1">
-            <objects>
-                <viewController id="gj2-ay-6Bf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oOs-FD-kJ5"/>
-                        <viewControllerLayoutGuide type="bottom" id="mox-6f-Z0r"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Lhg-x9-hOC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="YOi-Ap-nIb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qtE-jv-yoz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2844" y="138.98050974512745"/>
+            <point key="canvasLocation" x="972" y="37.331334332833585"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="rA7-Ic-HzG">
+        <scene sceneID="bXO-Nt-Pfo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rzs-zq-Rcl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v1h-OM-X7H" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eSj-LS-tnJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3Rr-YP-dON">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZgB-ig-ghZ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jm2-Ew-Fr3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JfU-Fu-1RB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SaK-3z-FpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>
-        <image name="filtericon" width="39" height="31"/>
-        <image name="listicon" width="35" height="31"/>
+        <image name="filtericon" width="20" height="20"/>
+        <image name="location" width="44" height="44"/>
+        <image name="mapicon" width="20" height="19"/>
     </resources>
 </document>

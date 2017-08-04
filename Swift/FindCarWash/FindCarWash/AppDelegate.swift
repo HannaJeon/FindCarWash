@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         let mapKey = valueForAPIKey(keyname: "GoogleMapAPI")
         GMSServices.provideAPIKey(mapKey)
         
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().barTintColor = UIColor.brown
+        UINavigationBar.appearance().tintColor = UIColor(red: 41/255, green: 191/255, blue: 186/255, alpha: 1)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 67/255, green: 61/255, blue: 55/255, alpha: 1)
         
         return true
     }

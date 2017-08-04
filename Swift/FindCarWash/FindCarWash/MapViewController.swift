@@ -10,10 +10,13 @@ import UIKit
 import GoogleMaps
 
 class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
+    
     let locationManager = CLLocationManager()
     let networking = Networking()
     var carWashInfo = [CarWash]()
     var currentLocation = Location.sharedInstance
+//    var mapView: GMSMapView!
+    
     @IBOutlet weak var mapView: GMSMapView!
     
     override func viewDidLoad() {
@@ -28,14 +31,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         
         NotificationCenter.default.addObserver(self, selector: #selector(getCarWashInfo(_:)), name: NSNotification.Name("finishedGetCarWash"), object: networking)
     }
-    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        mapView.clear()
-//        mapView.delegate = nil
-//        mapView.removeFromSuperview()
-//        mapView = nil
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,19 +39,19 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     func drawCurrentLocation() {
         let camera = GMSCameraPosition.camera(withLatitude: currentLocation.latitude, longitude: currentLocation.longitude, zoom: 15.0)
+//        self.view = mapView
         mapView.camera = camera
         mapView.delegate = self
 //        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
-        view = mapView
+//        self.view = mapView
         
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
-        marker.icon = #imageLiteral(resourceName: "mypin")
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-        mapView.settings.myLocationButton = false
+//        let marker = GMSMarker()
+//        marker.position = CLLocationCoordinate2D(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+//        marker.title = "Sydney"
+//        marker.snippet = "Australia"
+//        marker.map = mapView
+        mapView.settings.myLocationButton = true
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -67,7 +62,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             self.currentLocation = Location(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
             networking.getCarWash(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
         }
-//        drawCurrentLocation()
+        drawCurrentLocation()
         locationManager.stopUpdatingLocation()
     }
     
@@ -89,20 +84,26 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     func createMaker(latitude: Double, longitude: Double, title: String, snippet: String) {
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        marker.icon = #imageLiteral(resourceName: "mypin")
-        marker.title = title
-        marker.snippet = snippet
+        marker.icon = #imageLiteral(resourceName: "2")
+//        marker.title = title
+//        marker.snippet = snippet
         marker.map = mapView
     }
     
+    var istap = false
+    
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         if let selectedMarker = mapView.selectedMarker {
-            selectedMarker.icon = #imageLiteral(resourceName: "mypin")
+            selectedMarker.icon = nil
         }
+        
         mapView.selectedMarker = marker
-        marker.icon = #imageLiteral(resourceName: "yourpin")
+        marker.map = mapView
+        marker.icon = #imageLiteral(resourceName: "1")
+    
         return true
     }
+    
     
 }
 

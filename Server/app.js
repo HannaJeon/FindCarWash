@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 var router = require('./router/index')
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://FindCarWash:q50113360@localhost:27017/FindCarWash', {
+mongoose.connect('mongodb://localhost:27017/FindCarWash', {
   useMongoClient: true
 })
 mongoose.Promise = global.Promise

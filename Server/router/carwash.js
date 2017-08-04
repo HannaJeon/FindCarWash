@@ -10,7 +10,7 @@ router.post('/', function(req, res) {
           type: "Point",
           coordinates: [req.body.longitude, req.body.latitude]
         },
-        $maxDistance: 1000
+        $maxDistance: 2000
       }
     }
   }).exec(function(err, carwash) {

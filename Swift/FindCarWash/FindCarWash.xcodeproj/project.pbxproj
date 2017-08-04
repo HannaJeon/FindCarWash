@@ -251,6 +251,7 @@
 				TargetAttributes = {
 					B5B54B5E1F2CE3BD00D65803 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XT45A6H292;
 						ProvisioningStyle = Automatic;
 					};
 					B5B54B721F2CE3BE00D65803 = {
@@ -612,6 +613,7 @@
 			baseConfigurationReference = D355B0EBE8AF44869C993FB3 /* Pods-FindCarWash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XT45A6H292;
 				INFOPLIST_FILE = FindCarWash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWash;
@@ -625,6 +627,7 @@
 			baseConfigurationReference = 7C927E1BA984DA6B4873B23E /* Pods-FindCarWash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XT45A6H292;
 				INFOPLIST_FILE = FindCarWash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanna.FindCarWash;
